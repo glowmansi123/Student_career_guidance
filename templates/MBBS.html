@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBBS - Bachelor of Medicine and Bachelor of Surgery</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/course-detail.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Career Guidance</div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('explore') }}">Explore</a>
+      <a href="{{ url_for('courselist') }}">Courses</a>
+    </div>
+  </nav>
+
+  <section class="course-detail">
+    <h1>🏥 MBBS - Bachelor of Medicine & Surgery</h1>
+    
+    <div class="course-info">
+      <div class="info-box">
+        <h3>Duration</h3>
+        <p>5.5 Years</p>
+      </div>
+      <div class="info-box">
+        <h3>Eligibility</h3>
+        <p>12th (PCB)</p>
+      </div>
+      <div class="info-box">
+        <h3>Average Fees</h3>
+        <p>₹5-50 Lakhs</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>About MBBS</h2>
+      <p>MBBS is a 5.5-year professional degree (including 1-year internship) to become a licensed medical doctor.</p>
+
+      <h2>Course Structure</h2>
+      <ul>
+        <li>4.5 Years of Academic Study</li>
+        <li>1 Year Compulsory Internship</li>
+        <li>Subjects: Anatomy, Physiology, Biochemistry, Pathology, Pharmacology, Medicine, Surgery</li>
+      </ul>
+
+      <h2>Career Opportunities</h2>
+      <ul>
+        <li>Medical Practitioner (Doctor)</li>
+        <li>Surgeon</li>
+        <li>Medical Researcher</li>
+        <li>PG/MD for Specialization</li>
+        <li>Hospital Administrator</li>
+      </ul>
+
+      <h2>Entrance Exams</h2>
+      <p>NEET-UG (National Eligibility cum Entrance Test)</p>
+
+      <a href="{{ url_for('register_form') }}" class="btn-apply">Apply for Assessment</a>
+      <a href="{{ url_for('courselist') }}" class="btn-back">← Back to Courses</a>
+    </div>
+  </section>
+</body>
+</html>

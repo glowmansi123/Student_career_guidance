@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B.Pharm - Bachelor of Pharmacy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/course-detail.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Career Guidance</div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('explore') }}">Explore</a>
+      <a href="{{ url_for('courselist') }}">Courses</a>
+    </div>
+  </nav>
+
+  <section class="course-detail">
+    <h1>💊 B.Pharm - Bachelor of Pharmacy</h1>
+    
+    <div class="course-info">
+      <div class="info-box">
+        <h3>Duration</h3>
+        <p>4 Years</p>
+      </div>
+      <div class="info-box">
+        <h3>Eligibility</h3>
+        <p>12th (PCB/PCM)</p>
+      </div>
+      <div class="info-box">
+        <h3>Average Fees</h3>
+        <p>₹1-5 Lakhs</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>About B.Pharm</h2>
+      <p>Bachelor of Pharmacy is a 4-year undergraduate program focusing on pharmaceutical sciences, drug development, and pharmacy practice.</p>
+
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Pharmaceutical Chemistry</li>
+        <li>Pharmacology</li>
+        <li>Drug Manufacturing</li>
+        <li>Quality Control</li>
+        <li>Clinical Pharmacy</li>
+        <li>Hospital Pharmacy</li>
+      </ul>
+
+      <h2>Career Opportunities</h2>
+      <ul>
+        <li>Pharmacist</li>
+        <li>Drug Inspector</li>
+        <li>Medical Representative</li>
+        <li>Research & Development</li>
+        <li>Pharmaceutical Companies</li>
+        <li>M.Pharm for Higher Studies</li>
+      </ul>
+
+      <a href="{{ url_for('register_form') }}" class="btn-apply">Apply for Assessment</a>
+      <a href="{{ url_for('courselist') }}" class="btn-back">← Back to Courses</a>
+    </div>
+  </section>
+</body>
+</html>

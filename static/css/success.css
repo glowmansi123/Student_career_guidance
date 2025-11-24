@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.success-box {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #28a745;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.btn-success, .btn-explore, .btn-logout {
+  display: inline-block;
+  padding: 12px 30px;
+  margin: 10px 5px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-explore {
+  background: #28a745;
+  color: white;
+}
+
+.btn-explore:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.btn-logout {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-logout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4);
+}
+
+@media (max-width: 480px) {
+  .success-box {
+    padding: 35px 25px;
+  }
+  
+  .btn-success, .btn-explore, .btn-logout {
+    display: block;
+    margin: 10px 0;
+  }
+}

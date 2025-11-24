@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B.Sc Nursing</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/course-detail.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Career Guidance</div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('explore') }}">Explore</a>
+      <a href="{{ url_for('courselist') }}">Courses</a>
+    </div>
+  </nav>
+
+  <section class="course-detail">
+    <h1>👩‍⚕️ B.Sc Nursing</h1>
+    
+    <div class="course-info">
+      <div class="info-box">
+        <h3>Duration</h3>
+        <p>4 Years</p>
+      </div>
+      <div class="info-box">
+        <h3>Eligibility</h3>
+        <p>12th (PCB)</p>
+      </div>
+      <div class="info-box">
+        <h3>Average Fees</h3>
+        <p>₹50K-5 Lakhs</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>About B.Sc Nursing</h2>
+      <p>Bachelor of Science in Nursing is a 4-year undergraduate program focusing on patient care, healthcare management, and nursing practices.</p>
+
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Fundamentals of Nursing</li>
+        <li>Anatomy & Physiology</li>
+        <li>Medical-Surgical Nursing</li>
+        <li>Community Health Nursing</li>
+        <li>Pediatric Nursing</li>
+        <li>Mental Health Nursing</li>
+      </ul>
+
+      <h2>Career Opportunities</h2>
+      <ul>
+        <li>Staff Nurse</li>
+        <li>Nursing Supervisor</li>
+        <li>ICU/Emergency Nurse</li>
+        <li>Community Health Nurse</li>
+        <li>M.Sc Nursing for Higher Studies</li>
+        <li>Nursing Educator</li>
+      </ul>
+
+      <a href="{{ url_for('register_form') }}" class="btn-apply">Apply for Assessment</a>
+      <a href="{{ url_for('courselist') }}" class="btn-back">← Back to Courses</a>
+    </div>
+  </section>
+</body>
+</html>

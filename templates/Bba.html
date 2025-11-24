@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBA - Bachelor of Business Administration</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/course-detail.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Career Guidance</div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('explore') }}">Explore</a>
+      <a href="{{ url_for('courselist') }}">Courses</a>
+    </div>
+  </nav>
+
+  <section class="course-detail">
+    <h1>💼 BBA - Bachelor of Business Administration</h1>
+    
+    <div class="course-info">
+      <div class="info-box">
+        <h3>Duration</h3>
+        <p>3 Years</p>
+      </div>
+      <div class="info-box">
+        <h3>Eligibility</h3>
+        <p>12th (Any Stream)</p>
+      </div>
+      <div class="info-box">
+        <h3>Average Fees</h3>
+        <p>₹1-6 Lakhs</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>About BBA</h2>
+      <p>Bachelor of Business Administration is a 3-year management degree focusing on business operations, leadership, and entrepreneurship.</p>
+
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Business Management</li>
+        <li>Marketing & Sales</li>
+        <li>Human Resource Management</li>
+        <li>Finance & Accounting</li>
+        <li>Entrepreneurship</li>
+        <li>Business Analytics</li>
+      </ul>
+
+      <h2>Career Opportunities</h2>
+      <ul>
+        <li>Business Analyst</li>
+        <li>Marketing Manager</li>
+        <li>HR Executive</li>
+        <li>Sales Manager</li>
+        <li>Entrepreneur</li>
+        <li>MBA for Higher Studies</li>
+      </ul>
+
+      <a href="{{ url_for('register_form') }}" class="btn-apply">Apply for Assessment</a>
+      <a href="{{ url_for('courselist') }}" class="btn-back">← Back to Courses</a>
+    </div>
+  </section>
+</body>
+</html>

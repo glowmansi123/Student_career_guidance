@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Careers</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/explore.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Career Guidance</div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('explore') }}">Explore</a>
+      <a href="{{ url_for('courselist') }}">Courses</a>
+      <a href="{{ url_for('about') }}">About</a>
+    </div>
+  </nav>
+
+  <section class="explore-section">
+    <h1>Explore Career Paths</h1>
+    <p>Discover the perfect course that matches your passion and goals</p>
+
+    <div class="career-grid">
+      <div class="career-card">
+        <h3>🖥️ Engineering & Technology</h3>
+        <p>Computer Science, IT, Electronics</p>
+        <a href="{{ url_for('btech') }}">Learn More →</a>
+      </div>
+
+      <div class="career-card">
+        <h3>💼 Business & Management</h3>
+        <p>BBA, MBA, Business Administration</p>
+        <a href="{{ url_for('bba') }}">Learn More →</a>
+      </div>
+
+      <div class="career-card">
+        <h3>🏥 Medical & Healthcare</h3>
+        <p>MBBS, Nursing, Pharmacy</p>
+        <a href="{{ url_for('mbbs') }}">Learn More →</a>
+      </div>
+
+      <div class="career-card">
+        <h3>📊 Commerce & Accounts</h3>
+        <p>B.Com, CA, Finance</p>
+        <a href="{{ url_for('bcom') }}">Learn More →</a>
+      </div>
+
+      <div class="career-card">
+        <h3>🔬 Science</h3>
+        <p>B.Sc, Research, Laboratory</p>
+        <a href="{{ url_for('bsc') }}">Learn More →</a>
+      </div>
+
+      <div class="career-card">
+        <h3>💻 Computer Applications</h3>
+        <p>BCA, Software Development</p>
+        <a href="{{ url_for('bca') }}">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <h2>Ready to Take the Next Step?</h2>
+      <a href="{{ url_for('register_form') }}" class="btn-primary">Take Career Assessment</a>
+    </div>
+  </section>
+</body>
+</html>

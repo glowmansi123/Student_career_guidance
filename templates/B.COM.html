@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B.Com - Bachelor of Commerce</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/course-detail.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Career Guidance</div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('explore') }}">Explore</a>
+      <a href="{{ url_for('courselist') }}">Courses</a>
+    </div>
+  </nav>
+
+  <section class="course-detail">
+    <h1>📊 B.Com - Bachelor of Commerce</h1>
+    
+    <div class="course-info">
+      <div class="info-box">
+        <h3>Duration</h3>
+        <p>3 Years</p>
+      </div>
+      <div class="info-box">
+        <h3>Eligibility</h3>
+        <p>12th (Commerce/Any)</p>
+      </div>
+      <div class="info-box">
+        <h3>Average Fees</h3>
+        <p>₹50K-3 Lakhs</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>About B.Com</h2>
+      <p>Bachelor of Commerce is a 3-year undergraduate degree focusing on accounting, finance, taxation, and business management.</p>
+
+      <h2>Specializations</h2>
+      <ul>
+        <li>Accounting & Finance</li>
+        <li>Banking & Insurance</li>
+        <li>Taxation</li>
+        <li>E-Commerce</li>
+        <li>International Business</li>
+      </ul>
+
+      <h2>Career Opportunities</h2>
+      <ul>
+        <li>Accountant</li>
+        <li>Tax Consultant</li>
+        <li>Banking Professional</li>
+        <li>Financial Analyst</li>
+        <li>CA, CS, CMA</li>
+        <li>MBA for Higher Studies</li>
+      </ul>
+
+      <a href="{{ url_for('register_form') }}" class="btn-apply">Apply for Assessment</a>
+      <a href="{{ url_for('courselist') }}" class="btn-back">← Back to Courses</a>
+    </div>
+  </section>
+</body>
+</html>

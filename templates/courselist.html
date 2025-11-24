@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Courses</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/courselist.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Career Guidance</div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('explore') }}">Explore</a>
+      <a href="{{ url_for('courselist') }}">Courses</a>
+      <a href="{{ url_for('about') }}">About</a>
+    </div>
+  </nav>
+
+  <section class="courselist-section">
+    <h1>All Available Courses</h1>
+
+    <div class="course-list">
+      <div class="course-item">
+        <h3>B.Tech - Bachelor of Technology</h3>
+        <p>4-year engineering degree with specializations in CS, IT, Mechanical, Civil, etc.</p>
+        <a href="{{ url_for('btech') }}">View Details →</a>
+      </div>
+
+      <div class="course-item">
+        <h3>BCA - Bachelor of Computer Applications</h3>
+        <p>3-year degree focused on computer applications and software development</p>
+        <a href="{{ url_for('bca') }}">View Details →</a>
+      </div>
+
+      <div class="course-item">
+        <h3>B.Com - Bachelor of Commerce</h3>
+        <p>3-year commerce degree covering accounting, finance, and business</p>
+        <a href="{{ url_for('bcom') }}">View Details →</a>
+      </div>
+
+      <div class="course-item">
+        <h3>B.Sc - Bachelor of Science</h3>
+        <p>3-year science degree in Physics, Chemistry, Biology, Mathematics</p>
+        <a href="{{ url_for('bsc') }}">View Details →</a>
+      </div>
+
+      <div class="course-item">
+        <h3>BBA - Bachelor of Business Administration</h3>
+        <p>3-year management degree for business leadership roles</p>
+        <a href="{{ url_for('bba') }}">View Details →</a>
+      </div>
+
+      <div class="course-item">
+        <h3>CA - Chartered Accountancy</h3>
+        <p>Professional accounting qualification with high career prospects</p>
+        <a href="{{ url_for('ca') }}">View Details →</a>
+      </div>
+
+      <div class="course-item">
+        <h3>MBBS - Bachelor of Medicine and Bachelor of Surgery</h3>
+        <p>5.5-year medical degree to become a doctor</p>
+        <a href="{{ url_for('mbbs') }}">View Details →</a>
+      </div>
+
+      <div class="course-item">
+        <h3>B.Sc Nursing</h3>
+        <p>4-year nursing degree for healthcare professionals</p>
+        <a href="{{ url_for('nursing') }}">View Details →</a>
+      </div>
+
+      <div class="course-item">
+        <h3>B.Pharm - Bachelor of Pharmacy</h3>
+        <p>4-year pharmacy degree for pharmaceutical careers</p>
+        <a href="{{ url_for('pharmacy') }}">View Details →</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

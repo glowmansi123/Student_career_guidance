@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+}
+/*nambar section*/
+.navbar {
+  background-color: rgb(6, 40, 175);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+}
+
+.logo {
+  color: #ecf0f1;
+  font-size: 22px;
+  font-weight: bold;
+  font-style:oblique;
+  text-transform: capitalize;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+
+}
+
+
+.navbar ul li a:hover {
+  color: #1abc9c;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* Middle Section */
+.Mid {
+  background: linear-gradient(to right, 234C6A, 234C6A);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.Mid h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #1150f1;
+}
+
+.Mid p {
+  font-size: 18px;
+    color:#1150f1;
+  margin-bottom: 25px;
+}
+
+.Mid-buttons button {
+  background-color: white;
+  color: #61aae6;
+  border: none;
+  padding: 12px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border:solid rgb(35, 135, 235);
+  transition: background 0.3s ease;
+}
+
+.Mid-buttons button:hover {
+    
+  background-color: #ecf0f1;
+}
+
+/* Feature section*/
+.features {
+  background-color: #b4dced;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 250px;
+  text-align: center;
+}
+
+.feature-card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #555;
+}
+/* contact page popup*/
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color:#0077cc;
+  text-align: center;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background: linear-gradient(to right, #a2dbfa, #e0f7ff);
+
+  margin: 6% 0 0 60%;
+  padding: 10px;
+  
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h2{
+  color: #0523b7;
+  padding-top: 30px;
+}
+p{
+  padding: 5px;
+}
+/* css for dark and light mode button */

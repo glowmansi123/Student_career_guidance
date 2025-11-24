@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CA - Chartered Accountancy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/course-detail.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Career Guidance</div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('explore') }}">Explore</a>
+      <a href="{{ url_for('courselist') }}">Courses</a>
+    </div>
+  </nav>
+
+  <section class="course-detail">
+    <h1>🧾 CA - Chartered Accountancy</h1>
+    
+    <div class="course-info">
+      <div class="info-box">
+        <h3>Duration</h3>
+        <p>4-5 Years</p>
+      </div>
+      <div class="info-box">
+        <h3>Eligibility</h3>
+        <p>12th (Commerce)</p>
+      </div>
+      <div class="info-box">
+        <h3>Average Fees</h3>
+        <p>₹1-2 Lakhs</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>About CA</h2>
+      <p>Chartered Accountancy is a professional qualification in accounting, taxation, and auditing conducted by ICAI (Institute of Chartered Accountants of India).</p>
+
+      <h2>CA Course Levels</h2>
+      <ul>
+        <li>CA Foundation</li>
+        <li>CA Intermediate</li>
+        <li>CA Final</li>
+        <li>Articleship (3 years)</li>
+      </ul>
+
+      <h2>Career Opportunities</h2>
+      <ul>
+        <li>Chartered Accountant (Practice)</li>
+        <li>Financial Consultant</li>
+        <li>Tax Advisor</li>
+        <li>Auditor</li>
+        <li>Corporate Finance</li>
+        <li>Investment Banking</li>
+      </ul>
+
+      <h2>Why Choose CA?</h2>
+      <p>High earning potential, professional recognition, and diverse career opportunities in finance and accounting.</p>
+
+      <a href="{{ url_for('register_form') }}" class="btn-apply">Apply for Assessment</a>
+      <a href="{{ url_for('courselist') }}" class="btn-back">← Back to Courses</a>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B.Sc - Bachelor of Science</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/course-detail.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Career Guidance</div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('explore') }}">Explore</a>
+      <a href="{{ url_for('courselist') }}">Courses</a>
+    </div>
+  </nav>
+
+  <section class="course-detail">
+    <h1>🔬 B.Sc - Bachelor of Science</h1>
+    
+    <div class="course-info">
+      <div class="info-box">
+        <h3>Duration</h3>
+        <p>3 Years</p>
+      </div>
+      <div class="info-box">
+        <h3>Eligibility</h3>
+        <p>12th (Science)</p>
+      </div>
+      <div class="info-box">
+        <h3>Average Fees</h3>
+        <p>₹30K-2 Lakhs</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>About B.Sc</h2>
+      <p>Bachelor of Science is a 3-year undergraduate degree offering various specializations in science subjects.</p>
+
+      <h2>Popular Specializations</h2>
+      <ul>
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Mathematics</li>
+        <li>Biology</li>
+        <li>Computer Science</li>
+        <li>Biotechnology</li>
+      </ul>
+
+      <h2>Career Opportunities</h2>
+      <ul>
+        <li>Research Scientist</li>
+        <li>Laboratory Technician</li>
+        <li>Data Analyst</li>
+        <li>Educator/Teacher</li>
+        <li>M.Sc for Higher Studies</li>
+        <li>Government Jobs (UPSC, State PSC)</li>
+      </ul>
+
+      <a href="{{ url_for('register_form') }}" class="btn-apply">Apply for Assessment</a>
+      <a href="{{ url_for('courselist') }}" class="btn-back">← Back to Courses</a>
+    </div>
+  </section>
+</body>
+</html>

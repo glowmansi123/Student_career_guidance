@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Your Profile</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Career Guidance</div>
+    <div class="nav-links">
+      <a href="{{ url_for('explore') }}">Explore</a>
+      <a href="{{ url_for('buildprofile') }}">Profile</a>
+      <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+  </nav>
+
+  <section class="profile-section">
+    <h1>Build Your Career Profile</h1>
+    
+    <div class="profile-content">
+      <div class="profile-card">
+        <h3>📋 Career Assessment</h3>
+        <p>Take our comprehensive career assessment to discover your strengths</p>
+        <a href="{{ url_for('register_form') }}" class="btn">Start Assessment</a>
+      </div>
+
+      <div class="profile-card">
+        <h3>🎯 Your Interests</h3>
+        <p>Tell us about your interests, hobbies, and passion areas</p>
+        <a href="{{ url_for('register_form') }}" class="btn">Add Interests</a>
+      </div>
+
+      <div class="profile-card">
+        <h3>📚 Academic Details</h3>
+        <p>Add your academic background and qualifications</p>
+        <a href="{{ url_for('register_form') }}" class="btn">Update Details</a>
+      </div>
+
+      <div class="profile-card">
+        <h3>💼 Career Goals</h3>
+        <p>Define your career aspirations and future goals</p>
+        <a href="{{ url_for('register_form') }}" class="btn">Set Goals</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

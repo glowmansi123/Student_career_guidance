@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Career Guidance</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="hero-section">
+    <nav class="navbar">
+      <div class="logo">Career Guidance</div>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('loginpage') }}" class="btn-login">Login</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Find Your Perfect Career Path</h1>
+      <p>Discover courses, explore career options, and build your future with expert guidance</p>
+      <div class="cta-buttons">
+        <a href="{{ url_for('loginpage') }}" class="btn-primary">Get Started</a>
+        <a href="{{ url_for('explore') }}" class="btn-secondary">Explore Careers</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>🎓 Career Assessment</h3>
+      <p>Take our comprehensive assessment to discover careers that match your interests</p>
+    </div>
+    <div class="feature-card">
+      <h3>📚 Course Guidance</h3>
+      <p>Explore detailed information about various courses and their career prospects</p>
+    </div>
+    <div class="feature-card">
+      <h3>💼 Build Your Profile</h3>
+      <p>Create a professional profile and track your career journey</p>
+    </div>
+  </section>
+</body>
+</html>

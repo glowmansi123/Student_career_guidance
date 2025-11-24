@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Assessment Form</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Career Assessment Form</h1>
+    <p>Help us understand you better to provide personalized career guidance</p>
+
+    <form action="{{ url_for('register_form') }}" method="POST">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" name="fullname" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label>Highest Qualification</label>
+        <select name="qualification" required>
+          <option value="">Select...</option>
+          <option value="10th">Class 10th</option>
+          <option value="12th">Class 12th</option>
+          <option value="graduate">Graduate</option>
+          <option value="postgraduate">Post Graduate</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Stream/Subject</label>
+        <select name="stream" required>
+          <option value="">Select...</option>
+          <option value="science">Science</option>
+          <option value="commerce">Commerce</option>
+          <option value="arts">Arts</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Career Interests (Select Multiple)</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="interests" value="technology"> Technology & IT</label>
+          <label><input type="checkbox" name="interests" value="medical"> Medical & Healthcare</label>
+          <label><input type="checkbox" name="interests" value="business"> Business & Management</label>
+          <label><input type="checkbox" name="interests" value="creative"> Creative Arts</label>
+          <label><input type="checkbox" name="interests" value="science"> Science & Research</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Tell us about yourself</label>
+        <textarea name="about" rows="4" placeholder="Your goals, aspirations, skills..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Assessment</button>
+    </form>
+
+    <a href="{{ url_for('explore') }}" class="back-link">← Back to Explore</a>
+  </div>
+</body>
+</html>

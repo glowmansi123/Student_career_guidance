@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify OTP</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/forgetpasws.css') }}">
+</head>
+
+<body>
+  <div class="otp-box">
+    <h2>Enter OTP</h2>
+    <p>We've sent a 6-digit OTP to <strong>{{ email }}</strong></p>
+    <p style="font-size: 12px; color: #666;">Check your console for the OTP</p>
+
+    <form action="{{ url_for('verify_otp') }}" method="POST">
+      <input type="text" name="otp" placeholder="Enter 6-digit OTP" required maxlength="6">
+      <input type="hidden" name="email" value="{{ email }}">
+      <button type="submit">Verify OTP</button>
+    </form>
+
+    {% if error %}
+      <p style="color:red; margin-top:10px;">{{ error }}</p>
+    {% endif %}
+
+    <a href="{{ url_for('home') }}">← Back to Login</a>
+  </div>
+</body>
+</html>
